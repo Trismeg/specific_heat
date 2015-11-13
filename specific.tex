@@ -245,118 +245,20 @@ $$Error=\frac{387-361}{387}=6.7\%$$
 \end{table}
 
 
+ \section{Discussion of Error}
  
-%----------------------------------------------------------------------------------------
-%	SECTION 2
-%----------------------------------------------------------------------------------------
+ \section{Conclusion}
 
-\section{Simulation}
-
-The simulation applies a central acceleration to the orbiting particle.  Outside the boundary of the central mass we have the following acceleration.
-
-$$a=\frac{K}{r^2}$$
-
-Inside the boundary of the central mass ($r<R$) we have the following acceleration.
-
-$$a=\frac{K}{R^3}r$$
-
-Here R is the radius of the central mass and K is a constant determined by the user of the simulation.  K is MG.  For this simulation the radius was set to $R=6$ and the constant was set to $K=-0.1$ making the acceleration attractive.\\
-
-The initial position $\overrightarrow{r}_0$ and initial velocity $\overrightarrow{v}_0$ are set by the user.
-
-\newpage
-%----------------------------------------------------------------------------------------
-%	SECTION 3
-%----------------------------------------------------------------------------------------
-
-\section{Sample Calculation}
-\subsection{Circular Orbit}
-Given $\overrightarrow{r}_0=(10,0)$ and $K=-0.1$ we find the $\overrightarrow{v}_0$ for circular orbit.
-$$F_{net}=ma$$
-$$ \frac{mMG}{r^2} = m \frac{v^2}{r}$$
-$$ \frac{K}{r^2} = \frac{v^2}{r}$$
-$$v=\sqrt{\frac{K}{r}}$$
-$$v=\sqrt{\frac{0.1}{10}}=0.1$$
-The velocity must be tangential and therefore $\overrightarrow{v}_0$ must be perpendicular to $\overrightarrow{r}_0$.
-$$\overrightarrow{v}_0=(0,0.1)$$
-
-\subsection{Escape Velocity}
-Given $\overrightarrow{r}_0=(10,0)$ and $K=-0.1$ we find the $\overrightarrow{v}_0$ for escape from the central mass' gravitational attraction.  Escape is associated with a total mechanical energy of zero.
-
-$$PE+KE=0$$
-$$-\frac{mMG}{r}+\frac{mv^2}{2}=0 $$
-$$-\frac{K}{r}+\frac{v^2}{2}=0 $$
-$$v_{escape}=\sqrt{\frac{2K}{r}}$$
-$$v_{escape}=\sqrt{\frac{2(0.1)}{10}}=0.14$$
-
-%----------------------------------------------------------------------------------------
-%	SECTION 4
-%----------------------------------------------------------------------------------------
-\newpage 
-
-\section{Results and Conclusions}
-
-\subsection{Circular Orbit}
-For the conditions $\overrightarrow{r}_0=(10,0)$ and $K=-0.1$ we calculate an initial velocity $\overrightarrow{v}_0=(0,0.1)$ will give a circular orbit.  Running the simulation yields the following orbit.  We can see it is circular.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.4\textwidth]{circular} % Include the image placeholder.png
-\caption{Circular Orbit}
-\end{center}
-\end{figure}
-
-\subsection{Escape Velocity}
-For the conditions $\overrightarrow{r}_0=(10,0)$ and $K=-0.1$ we calculate an initial velocity $\overrightarrow{v}_0=(0,0.14)$ will give an escape from the gravitational attraction.  We can observe in the simulation the object indeed escapes and the total energy is zero.  See the following figure.
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.4\textwidth]{escape} % Include the image placeholder.png
-\caption{Escape Velocity}
+\includegraphics[width=0.4\textwidth]{pic} % Include the image placeholder.png
+\caption{Experimental materials}
 \end{center}
 \end{figure}
 
 \newpage
 
-\subsection{Elliptical Orbit}
-For the conditions $\overrightarrow{r}_0=(10,0)$ and $K=-0.1$ we use an initial velocity $\overrightarrow{v}_0=(0,0.12)$ that is between the one for circular orbit and escape.  As the figure shows the resulting orbit is elliptical.
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.4\textwidth]{elliptic} % Include the image placeholder.png
-\caption{Elliptic Orbit}
-\end{center}
-\end{figure}
-%----------------------------------------------------------------------------------------
-%	SECTION 5
-%----------------------------------------------------------------------------------------
-
-\section{Discussion}
-This is my discussion.  Checkout the pumpkins as shown in Figure \ref{fig:pumpkin}.  Look at the honeycrisp as shown in Figure \ref{fig:apple}.
-
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=2cm]{Pumpkins} % Include the image placeholder.png
-\caption{These are pumpkins}
- \label{fig:pumpkin}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=2cm]{Apple.jpg} % Include the image placeholder.png
-\caption{This is an apple.}
- \label{fig:apple}
-\end{center}
-\end{figure}
-
-$$\mathbf{F} = Q (\mathbf{E} + \mathbf{v} \times \mathbf{B})$$
-
-
-%----------------------------------------------------------------------------------------
-%	SECTION 6
-%----------------------------------------------------------------------------------------
 
 
 %----------------------------------------------------------------------------------------
